@@ -95,19 +95,19 @@
 					<source>${maven.compiler.source}</source>
 					<target>${maven.compiler.target}</target>
 					<annotationProcessorPaths>
-						<!-- ✅ Lombok precisa ser processado antes do MapStruct -->
+						<!-- ✅ Lombok needs to be processed first -->
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 							<version>1.18.36</version>
 						</path>
-						<!-- ✅ O binding ajuda a evitar conflitos -->
+						<!-- ✅ Binding avoids conflicts between Lombok & MapStruct -->
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok-mapstruct-binding</artifactId>
 							<version>0.2.0</version>
 						</path>
-						<!-- ✅ Agora MapStruct pode ser processado corretamente -->
+						<!-- ✅ MapStruct Processor should be processed last -->
 						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
