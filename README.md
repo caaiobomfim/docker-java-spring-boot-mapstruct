@@ -38,7 +38,7 @@ docker-compose up -d --build
 ```
 
 This will start:
-- ✅ Spring Boot Application (spring-boot-app)
+- ✅ Spring Boot Application (spring-boot-app).
 
 ### 🌍 Testing the API
 Once the container is running, you can test the API.
