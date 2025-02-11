@@ -84,7 +84,7 @@ Book successfully created with ID: 1
 Returning response: {id=1, title=Clean Code, author=Robert C. Martin, isbn=9780132350884, language=null, publishedDate=01/08/2008}
 ```
 
-## 📜 Notes
+## 🗒️ Notes
 
 ### 📝 Important: Correct pom.xml Configuration for MapStruct & Lombok
 To avoid conflicts between Lombok and MapStruct during compilation with Maven, the order of annotation processors in `maven-compiler-plugin` is crucial.
